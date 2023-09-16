@@ -38,3 +38,8 @@ Palette palette = Palette({
     dodger_blue,
     silver,
 });
+
+int DISPLAY_WIDTH = 160;
+int DISPLAY_HEIGHT = 160;
+int DISPLAY_ROWS = 32;
+int DISPLAY_COLUMNS = 32;
