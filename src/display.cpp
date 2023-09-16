@@ -20,3 +20,7 @@ Display::Display(int width, int height, int rows, int columns) {
 Display::~Display() {
     SDL_Quit();
 }
+
+void Display::draw(std::vector<int> pixels) {
+
+}
