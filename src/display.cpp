@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "display.hpp"
+#include "log.hpp"
 
 Display::Display(int width, int height, int rows, int columns) {
     this->width = width;
@@ -13,7 +14,10 @@ Display::Display(int width, int height, int rows, int columns) {
 
     if (result != 0) {
         const char* error = SDL_GetError();
-        std::cerr << "Error while initializing SDL: " << error << std::endl;
+        logError("Error while initializing SDL:");
+        logError(error);
+    } else {
+        log("Initialized SDL");
     }
 }
 
