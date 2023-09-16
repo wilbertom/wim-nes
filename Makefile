@@ -1,3 +1,4 @@
+SDL_FLAGS=-lSDL3 -Lvendor/SDL/build/lib/ -Ivendor/SDL/include
 
 all:
-	g++ src/*.cpp -Iinclude commands/main.cpp
+	g++ $(SDL_FLAGS) -Iinclude src/*.cpp commands/main.cpp
