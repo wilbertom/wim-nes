@@ -1,6 +1,7 @@
 #pragma once
 
 #include "color.hpp"
+#include "palette.hpp"
 
 Color black = Color(0x000000);
 Color white = Color(0xffffff);
@@ -18,3 +19,22 @@ Color grey = Color(0x777777);
 Color conifer = Color(0xaaff66);
 Color dodger_blue = Color(0x0088ff);
 Color silver = Color(0xbbbbbb);
+
+Palette palette = Palette({
+    black,
+    white,
+    dark_red,
+    pale_turquoise,
+    fuchsia,
+    malachite,
+    new_midnight_blue,
+    dolly,
+    whiskey_sour,
+    raw_umber,
+    salmon,
+    night_rider,
+    grey,
+    conifer,
+    dodger_blue,
+    silver,
+});

@@ -10,6 +10,5 @@ public:
 
     Palette(std::vector<Color> colors);
 
-
     Color get(std::vector<Color>::size_type index);
 };
